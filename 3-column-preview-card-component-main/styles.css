@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body{
+    min-height: 100vh;
+    font-size: 15px;
+    background: hsl(0, 0%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.card_item1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 5px 0 0;
+}
+
+
+
+img{
+    margin: 2rem 0 0 2rem;
+}
+
+.card_info{
+    margin: 1.5rem 0 0 2rem;
+    text-align: left;
+    width: 70%;
+}
+
+.card_info--title{
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+    color: hsl(0, 0%, 95%);
+}
+
+.card_info p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 0.75rem;
+    line-height: 1.3rem;
+}
+
+.card_item2{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card_item3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 5px 5px;
+}
+
+button{
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 1.7rem;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 0.5rem;
+    width: 7.5rem;
+    margin-bottom: 2rem;
+    border: none;
+    font-size: 0.75rem;
+}
+
+.card_item1 .card_info button{
+    color: hsl(31, 77%, 52%);
+}
+.card_item2 .card_info button{
+    color: hsl(184, 100%, 22%);;
+}
+.card_item3 .card_info button{
+    color: hsl(179, 100%, 13%);
+}
+
+@media (min-width:1024px) {
+    .card{
+        flex-direction: row;
+        width: 65%;
+    }
+    .card_info{
+        width: 71%;
+    }
+    .card_info p{
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-top: 2rem;
+    }
+    button{
+        margin-top: 4rem;
+        border-radius: 1.7rem;
+        padding: 1rem;
+        width: 10rem;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+    }
+}
