@@ -119,5 +119,16 @@ button{
         width: 10rem;
         margin-bottom: 2rem;
         font-size: 1rem;
+        border: 2px solid white;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+    }
+    button:hover{
+        color: white !important;
+        background-color: transparent;
+    }
+    button:focus-visible{
+        color: white !important;
+        background-color: transparent;
     }
 }
